@@ -30,7 +30,8 @@ body{
 }
 header{
     background:#958775;
-    height:170px;
+    height:20%;
+    padding-bottom:5%;
     
 }
 h1{
@@ -43,14 +44,15 @@ h1{
     display:flex;
     width:30%;
     margin-left:5%;
-    list-style-type:none;
+    justify-content:space-evenly;
+    align-items:center;
     
     }
 #nav a:link,
 #nav a:visited {
 	color:#F78464;
     background:#2F2C4E;
-    padding:8px 40px 4px 10px;
+    padding:10px;
     display:block;
 }
 #home #nav-home a:hover,
@@ -73,7 +75,7 @@ h1{
 }
 .ocean{
     width:50%;
-    height:600px;
+    height:75vh;
     margin-left: 2%;
     margin-right:8%;
     margin-top:2%;
@@ -113,36 +115,36 @@ h2{
 
 }
 #B1{
-    height:425px;
-    width:425px;
+    height:45vh;
+    width:45vh;
 }
 #B2{
-    height:425px;
-    width:425px;
+    height:45vh;
+    width:45vh;
 }
 #B3{
-    height:425px;
-    width:425px;
+    height:45vh;
+    width:45vh;
 }
 #B4{
-    height:425px;
-    width:425px;
+    height:45vh;
+    width:45vh;
 }
 #B5{
-    height:425px;
-    width:425px;
+    height:45vh;
+    width:45vh;
 }
 #B6{
-    height:425px;
-    width:425px;
+    height:45vh;
+    width:45vh;
 }
 #B7{
-    height:425px;
-    width:425px;
+    height:45vh;
+    width:45vh;
 }
 #B8{
-    height:425px;
-    width:425px;
+    height:45vh;
+    width:45vh;
 }
 .b1{
     margin-bottom:2%
@@ -195,3 +197,48 @@ footer{
         width:35%;
         
     }
+
+    @media(max-width:800px){
+       header{
+           position:relative;
+           display:flex;
+           flex-direction:column;
+           align-items:center;
+       }
+       #nav{
+           display:flex;
+           flex-direction:column;
+
+       }
+       .ocean{
+          height:50vh;
+          width:80vw;
+          margin-top:5%
+       }
+       .info{
+           display:flex;
+           flex-wrap:wrap;
+           
+           
+       }
+       .info1{
+           display:flex;
+           align-items:center;
+           width:80%
+       }
+       .pro{
+           width:30%
+       }
+
+    }
+
+    @media(max-width:500px){
+        .ocean{
+            margin-top:10%;
+        }
+    }
+    @media(max-width:360px){
+        .pro{
+            width:50%;
+        }
+    }   
